@@ -1,0 +1,129 @@
+.CardToka{
+    margin-top: 69px;
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+    .right{
+       width: 398px;
+       height: 278px; 
+       filter: drop-shadow(7px -7px 2px rgba(0,8,20,0.26));
+
+       img{
+        width: 100%;
+        height: 100%;
+       }
+
+        .infoCard{
+            width: 398px;
+            height: 278px;
+            position: absolute;
+            top: 0;
+            padding: 35px 25px;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+
+            .balance{
+                font-weight: 500;
+                font-family: 'Exo';
+                font-size: 14px;
+                color: #ffffff; 
+            }
+
+            .number{
+                display: flex;
+                flex-direction: column;
+                gap: 3px;
+                margin-top: 21px;
+
+                .text1{
+                    font-weight: 500;
+                    font-family: 'Exo';
+                    font-size: 12px;
+                    color: #ffffff;
+                }
+
+                .text2{
+                    font-family: 'Exo';
+                    font-size: 32px;
+                    color: #ffffff;
+                    font-weight: 500;
+                }
+            }
+
+            .validity{
+                display: flex;
+                flex-direction: row;
+                gap: 50px;
+                justify-content: flex-end;
+
+                .date{
+                    font-family: 'Exo';
+                    font-size: 14px;
+                    color: #ffffff;
+                    font-weight: 500;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 7px;
+                }
+
+                .status{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 7px;
+                    .white{
+                        font-family: 'Exo';
+                        font-size: 14px;
+                        color: #ffffff;
+                        font-weight: 500;
+                    }
+
+                    .blue{
+                        font-weight: 500;
+                        font-family: 'Exo';
+                        font-size: 14px;
+                        color: #06d6a0;
+                    }
+                }
+            }
+        }
+    }
+    .left{
+        padding: 22px 50px;
+        width: 986px;
+        height: 517px;
+        border-radius: 15px;
+        background-color: #ffffff;
+        box-shadow: 0px 1px 5px rgba(2,5,74,0.2);
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        .title{
+            font-family: 'Exo';
+            font-size: 20px;
+            color: #455362;
+            font-weight: 700; 
+        }
+
+        .inputs{
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+        }
+
+        .inputs2{
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+            margin-top: 23px;
+        }
+
+        .inputs3{
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+            margin-top: 10px;
+        }
+    }
+}

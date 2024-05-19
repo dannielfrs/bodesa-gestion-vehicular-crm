@@ -1,0 +1,480 @@
+.ShowMaintenance{
+    .header{
+        width: 1635px;
+        height: 88px;
+        background-color: #ffffff;
+        box-shadow: 0px 5px 5px rgba(2,5,74,0.2);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 72px 0px 86px;
+
+        .left{
+            display: flex;
+            flex-direction: row;
+            gap: 15px;
+            align-items: center;
+
+            .back{
+                margin-right: 25px;
+                cursor: pointer;
+            }
+
+            .user{
+                width: 54px;
+                height: 54px;
+                border-radius: 50%;
+                background: #dadada;
+
+                img{
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+            }
+
+            .name{
+                font-family: 'Exo';
+                font-size: 16px;
+                color: #455362;
+                font-weight: 600;
+            }
+
+            .type{
+                font-family: 'Exo';
+                font-size: 16px;
+                color: #ff9e1b;
+                font-weight: 600;
+            }
+        }
+
+        .right{
+            font-weight: 500;
+            font-family: 'Exo';
+            font-size: 14px;
+            color: #818b95;
+            
+            label{
+                font-weight: 500;
+                font-family:'Exo';
+                font-size: 14px;
+                color: #06d6a0;
+            }
+        }
+    }
+    .information{
+        padding: 38px 89px;
+        overflow: scroll;
+        height: calc(100vh - 183px);
+
+        .title{
+            font-weight: 700;
+            font-family: 'Exo';
+            font-size: 14px;
+            color: #455362;
+        }
+
+        .generalData{
+            display: flex;
+            flex-direction: row;
+            gap: 15px;
+            margin-top: 16px;
+
+            .text{
+                p:nth-child(1) {
+                    font-weight: 500;
+                    font-family: 'Exo';
+                    font-size: 12px;
+                    color: #818b95;
+                } 
+
+                p:nth-child(2){
+                    font-weight: 600;
+                    font-family: 'Exo';
+                    font-size: 12px;
+                    color: #292828;
+                }
+            }
+        }
+
+        .request{
+            margin-top: 61px;
+            .status{
+                width: 100%;
+                height: 43px;
+                border-bottom: 1px solid #d5dfe8;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .textRequest{
+                    font-weight: 700;
+                    font-family: 'Exo';
+                    font-size: 14px;
+                    color: #455362;
+
+                    label{
+                        font-weight: 600;
+                        font-family: 'Exo';
+                        font-size: 14px;
+                        color: #06d6a0;
+                    }
+                }
+
+                .textDate{
+                    display: flex;
+                    flex-direction: row;
+                    gap: 10px;
+
+                    .date{
+                        font-family: 'Exo';
+                        font-size: 12px;
+                        color: #818b95;
+                        font-weight: 600;
+                    }
+
+                    .hour{
+                        font-family: 'Exo';
+                        font-size: 12px;
+                        color: #818b95;
+                        font-weight: 600;
+                    }
+                }
+            }
+            .infoStatus{
+                display: flex;
+                flex-direction: row;
+                gap: 30px;
+                margin-top: 30px;
+
+                .sheet{
+                    font-weight: 500;
+                    font-family: 'Exo';
+                    font-size: 12px;
+                    color: #818b95;
+
+                    label{
+                        font-weight: 500;
+                        font-family: 'Exo';
+                        font-size: 12px;
+                        color: #06d6a0;
+                    }
+                }
+
+                .status2{
+                    font-weight: 500;
+                    font-family: 'Exo';
+                    font-size: 12px;
+                    color: #818b95;
+
+                    label{
+                        font-weight: 500;
+                        font-family: 'Exo';
+                        font-size: 12px;
+                        color: #06d6a0;
+                    }
+                }
+
+                .date{
+                    font-weight: 500;
+                    font-family: 'Exo';
+                    font-size: 12px;
+                    color: #818b95;
+                    
+                    label{
+                        font-weight: 600;
+                        font-family: 'Exo';
+                        font-size: 12px;
+                        color: #292828;
+                    }
+                }
+
+                .hour{
+                    font-weight: 500;
+                    font-family: 'Exo';
+                    font-size: 12px;
+                    color: #818b95;
+                    
+                    label{
+                        font-weight: 600;
+                        font-family: 'Exo';
+                        font-size: 12px;
+                        color: #292828;
+                    }
+                }
+            }
+            .types{
+                margin-top: 30px;
+                display: flex;
+                flex-direction: row;
+                gap: 30px;
+
+                .typeMaintenance{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 3px;
+
+                    .title{
+                        font-weight: 500;
+                        font-family: 'Exo';
+                        font-size: 12px;
+                        color: #818b95;
+                        margin-left: 15px;
+                    }
+
+                    .type{
+                        width: 171px;
+                        height: 33px;
+                        padding: 0px 15px 0px 14px;
+                        border: 1px solid #d5dfe8;
+                        border-radius: 10px;
+                        background-color: #edf7ff;
+                        background-size: cover;
+                        font-family: 'Exo';
+                        font-size: 12px;
+                        color: #818b95;
+                        display: flex;
+                        font-weight: 600;
+                        align-items: center;
+                    }
+                } 
+
+                .typeVehicle{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 3px;
+
+                    .title{
+                        font-weight: 500;
+                        font-family: 'Exo';
+                        font-size: 12px;
+                        color: #818b95;
+                        margin-left: 15px;
+                    }
+
+                    .type{
+                        width: 189px;
+                        height: 33px;
+                        padding: 0px 15px 0px 14px;
+                        border: 1px solid #d5dfe8;
+                        border-radius: 10px;
+                        background-color: #edf7ff;
+                        font-weight: 600;
+                        font-family: 'Exo';
+                        font-size: 12px;
+                        color: #818b95;
+                        display: flex;
+                        align-items: center;
+                    }
+                }
+
+                .mileageText{
+                    .title{
+                        font-weight: 500;
+                        font-family: 'Exo';
+                        font-size: 12px;
+                        color: #818b95;
+                        margin-left: 15px;
+                    }
+                    .numberMileage{
+                        width: 123px;
+                        height: 33px;
+                        padding: 0px 15px 0px 14px;
+                        border: 1px solid #d5dfe8;
+                        border-radius: 10px;
+                        background-color: #edf7ff;
+                        background-size: cover;
+                        font-family: 'Exo';
+                        font-size: 12px;
+                        color: #818b95;
+                        display: flex;
+                        align-items: center;
+                        font-weight: 600;
+                    }
+                }
+            }
+
+            .details{
+                display: flex;
+                flex-direction: column;
+                gap: 3px;
+                margin-top: 30px;
+                .title{
+                    margin-left: 15px;
+                    font-family: 'Exo';
+                    font-size: 12px;
+                    color: #818b95;
+                    font-weight: 500;
+                }
+
+                .textDetails{
+                    width: 1051px;
+                    height: 98px;
+                    padding: 23px 15px 0px 14px;
+                    border: 1px solid #d5dfe8;
+                    border-radius: 10px;
+                    background-color: #edf7ff;
+                    font-family: 'Exo';
+                    font-size: 12px;
+                    color: #818b95;
+                    font-weight: 600;
+                }
+            }
+
+            .photos{
+                display: flex;
+                flex-direction: row;
+                gap: 30px;
+                margin-top: 17px;
+
+                .photoPlate{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+
+                    .title{
+                        font-weight: 500;
+                        font-family: 'Exo';
+                        font-size: 12px;
+                        color: #818b95;
+                        margin-left: 19px;
+                    }
+
+                    .photo1{
+                        border: 1px dotted #818b95;
+                        border-radius: 15px;
+                        width: 210px;
+                        height: 124px;
+
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            border-radius: 15px;
+                        }
+                    }
+                }
+
+                .photoFault{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+
+                    .title{
+                        font-weight: 500;
+                        font-family: 'Exo';
+                        font-size: 12px;
+                        color: #818b95;
+                        margin-left: 19px;
+                    }
+
+                    .photo2{
+                        border: 1px dotted #818b95;
+                        border-radius: 15px;
+                        width: 210px;
+                        height: 124px;
+
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            border-radius: 15px;
+                        }
+                    }
+                }
+            }
+
+            .videoFault{
+                margin-top: 30px;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                h1{
+                    font-weight: 500;
+                    font-family: 'Exo';
+                    font-size: 12px;
+                    color: #818b95;
+                    margin-left: 20px;
+                }
+            }
+        }
+
+        .workshopAssignment{
+            margin-top: 57px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            .dateAssignment{
+                width: 1509px;
+                height: 43px;
+                border-bottom: 1px solid #d5dfe8;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+
+                .title{
+                    font-weight: 700;
+                    font-family: 'Exo';
+                    font-size: 16px;
+                    color: #455362;
+                }
+
+                .date{
+                    display: flex;
+                    flex-direction: row;
+                    gap: 10px;
+
+                    p{
+                        font-weight: 600;
+                        font-family: 'Exo';
+                        font-size: 12px;
+                        color: #818b95;
+                    }
+                }
+            }
+
+            .selected{
+                font-family: 'Exo';
+                font-size: 14px;
+                color: #818b95;
+                font-weight: 500;
+                margin-top: 10px;
+
+                label{
+                    font-weight: 700;
+                    font-family: 'Exo';
+                    font-size: 14px;
+                    color: #455362;
+                }
+            }
+
+            .info{
+                display: flex;
+                flex-direction: row;
+                gap: 25px;
+
+                .textBoth{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 6px;
+
+                    .textGray{
+                        font-weight: 500;
+                        font-family: 'Exo';
+                        font-size: 12px;
+                        color: #818b95;
+                    }
+
+                    .textBlack{
+                        font-weight: 600;
+                        font-family: 'Exo';
+                        font-size: 12px;
+                        color: #292828;
+                    }
+                }
+            }
+        }
+    }
+}

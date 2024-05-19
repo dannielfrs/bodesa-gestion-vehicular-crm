@@ -1,0 +1,86 @@
+.Settings{
+    padding: 83px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .left{
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+        .contSettings{
+            width: 812px;
+            height: 82px;
+            border-radius: 25px;
+            background-color: #ffffff;
+            box-shadow: 4px 5px 11px rgba(2,21,31,0.33);
+            padding: 0px 51px 0px 38px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+
+            &:hover{
+                background-color: #edf7ff;
+            }
+    
+            .left{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+    
+                >p:nth-child(1){
+                    font-weight: 700;
+                    font-family: 'Exo';
+                    font-size: 16px;
+                    color: #455362;
+                }
+    
+                >p:nth-child(2){
+                    font-weight: 600;
+                    font-family: 'Exo';
+                    font-size: 14px;
+                    color: #292828;
+                }
+            }
+        }
+    }
+    .contSettings{
+        width: 509px;
+        height: 106px;
+        border-radius: 25px;
+        background-color: #ffffff;
+        box-shadow: 4px 5px 11px rgba(2,21,31,0.33);
+        padding: 0px 28px 0px 28px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+
+        &:hover{
+            background-color: #edf7ff;
+        }
+
+        .left{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            >p:nth-child(1){
+                font-weight: 700;
+                font-family: 'Exo';
+                font-size: 16px;
+                color: #455362;
+            }
+
+            >p:nth-child(2){
+                font-weight: 600;
+                font-family: 'Exo';
+                font-size: 14px;
+                color: #292828;
+            }
+        }
+    }
+}

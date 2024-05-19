@@ -1,0 +1,118 @@
+.dFlex{
+    display: flex;
+    flex-direction: row;
+}
+.pR40pxW200{
+    padding-right: 8px;
+    width: 262px;
+}
+.toastGreen{
+    padding: 8px 0 2px;
+    color:  #05bc8d;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Exo';
+}
+
+.toastGray{
+    font-family: 'Exo';
+    font-size: 14px;
+    color: #455362;
+}
+.imagePading{
+    padding: 0 10px;
+    width: 90px;
+}
+
+.Users{
+    padding: 50px 30px;
+
+    .header{
+        padding: 0px 28px;
+        display: flex;
+        flex-direction: column;
+        gap: 34px;
+        p{
+            font-family: 'Exo';
+            font-size: 24px;
+            color: #455362;
+            font-weight: 700;
+
+            label{
+                font-family: 'Exo';
+                font-size: 24px;
+                color: #ff9e1b; 
+                font-weight: 700;
+            }
+        }
+
+        .inputs{
+           display: flex;
+           flex-direction: row;
+           justify-content: space-between; 
+           margin-bottom: 13px;
+
+            .center{
+                display: flex;
+                flex-direction: row;
+                gap: 40px;
+            }
+
+            .addUser{
+                display: flex;
+                flex-direction: column;
+                width: 107px;
+                height: 79px;
+                gap: 8px;
+                align-items: center;
+
+                .blue{
+                    display: none;
+                }
+
+                &:hover{
+                    .blue{
+                        width: 107px;
+                        height: 26px;
+                        border-radius: 15px;
+                        background-color: #000814;
+                        font-weight: 600;
+                        font-family: 'Exo';
+                        font-size: 12px;
+                        color: #ffffff;
+                        text-align: center; 
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+.statusAccount{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+
+    .statusBlue{
+        font-family: 'Exo';
+        font-size: 12px;
+        color: #06d6a0;
+        font-weight: 700;
+        width: 144px;
+        text-align: center;
+    }
+    
+    .statusRed{
+        font-family: 'Exo';
+        font-size: 12px;
+        width: 144px;
+        color: #ef476f;
+        font-weight: 700;
+        text-align: center;
+    }
+}

@@ -1,0 +1,520 @@
+.RechargeRegister {
+    position: absolute;
+    top: 206px;
+    padding: 27px;
+    background-color: #ffffff;
+
+    .header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: calc(100vw - 780px);
+
+        .left {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 27px;
+
+            .status {
+                font-size: 12px;
+                color: #818b95;
+                font-family: 'Exo';
+                font-weight: 600;
+
+                label {
+                    font-weight: 600;
+                    font-size: 12px;
+                    font-family: 'Exo';
+                    color: #455362;
+                }
+            }
+        }
+
+        .right {
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+
+            .accept {
+                width: 115px;
+                height: 35px;
+                border-radius: 15px;
+                background-color: #06d6a0;
+                font-size: 14px;
+                color: #ffffff;
+                font-family: 'Exo';
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-weight: 600;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: #05bc8d;
+                }
+            }
+
+            .decline {
+                width: 115px;
+                height: 35px;
+                border-radius: 15px;
+                background-color: #ef476f;
+                font-size: 14px;
+                color: #ffffff;
+                font-family: 'Exo';
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-weight: 600;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: #d13459;
+                }
+            }
+        }
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+
+        .card1 {
+            width: 396px;
+            position: relative;
+            padding: 0 17px;
+
+            .user {
+                display: flex;
+                flex-direction: row;
+                gap: 30px;
+                align-items: center;
+                margin-top: 50px;
+                margin-left: 7px;
+
+                .image {
+                    width: 55px;
+                    height: 55px;
+                    border-radius: 50%;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 50%;
+                    }
+                }
+
+                .text {
+                    width: 170px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 8px;
+
+                    .name {
+                        font-weight: 600;
+                        font-size: 16px;
+                        color: #455362;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                    }
+
+                    .type {
+                        font-weight: 600;
+                        font-size: 16px;
+                        color: #ff9e1b;
+                        font-family: 'Exo';
+                    }
+                }
+            }
+
+            .showUser {
+                width: 73px;
+                height: 22px;
+                border-radius: 15px;
+                background-color: #455362;
+                font-size: 9px;
+                font-family: 'Exo';
+                color: #ffffff;
+                text-align: center;
+                font-weight: 600;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 7px;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: #023047;
+                }
+            }
+
+            .info {
+                margin-top: 24px;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                .sheet {
+                    font-weight: 500;
+                    font-size: 12px;
+                    color: #818b95;
+                    font-family: 'Exo';
+
+                    label {
+                        font-weight: 500;
+                        font-size: 12px;
+                        color: #06d6a0;
+                        font-family: 'Exo';
+                    }
+                }
+
+                .txtRequest {
+                    font-weight: 500;
+                    font-size: 12px;
+                    color: #818b95;
+                    font-family: 'Exo';
+
+                    label {
+                        font-weight: 600;
+                        font-size: 12px;
+                        color: #292828;
+                        font-family: 'Exo';
+                    }
+                }
+
+                .both {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+
+                    .date {
+                        display: flex;
+                        flex-direction: row;
+                        gap: 5px;
+                        font-size: 12px;
+                        color: #818b95;
+                        font-weight: 500;
+                        font-family: 'Exo';
+
+                        label {
+                            font-weight: 600;
+                            font-size: 12px;
+                            color: #292828;
+                            font-family: 'Exo';
+                        }
+                    }
+                }
+
+                .infoVehicle {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 15px;
+                    margin-top: 14px;
+
+                    .vehicle {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 5px;
+
+                        .txtGray {
+                            font-weight: 500;
+                            font-size: 12px;
+                            color: #818b95;
+                            font-family: 'Exo';
+                        }
+
+                        .txtBold {
+                            font-weight: 600;
+                            font-size: 12px;
+                            color: #292828;
+                            font-family: 'Exo';
+                        }
+                    }
+                }
+
+                .ubication {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+                    margin-top: 5px;
+
+                    .txtGray {
+                        font-weight: 500;
+                        font-size: 12px;
+                        color: #818b95;
+                        font-family: 'Exo';
+                    }
+
+                    .txtBold {
+                        font-weight: 600;
+                        font-size: 12px;
+                        color: #292828;
+                        font-family: 'Exo';
+                    }
+                }
+
+                .km {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 30px;
+                    margin-top: 5px;
+
+                    .kmAccept {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 5px;
+
+                        .txtGray {
+                            font-size: 12px;
+                            color: #818b95;
+                            font-weight: 500;
+                            font-family: 'Exo';
+                        }
+
+                        .txtBold {
+                            font-weight: 600;
+                            font-size: 12px;
+                            font-family: 'Exo';
+                            color: #292828;
+                        }
+                    }
+                }
+
+                .percent {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+                    margin-top: 5px;
+
+                    .txtGray {
+                        font-weight: 500;
+                        font-size: 12px;
+                        color: #818b95;
+                        font-family: 'Exo';
+                    }
+
+                    .txtBold {
+                        font-size: 12px;
+                        color: #292828;
+                        font-weight: 600;
+                        font-family: 'Exo';
+                    }
+                }
+
+                .showButton {
+                    width: 119px;
+                    margin-top: 40px;
+
+                    button {
+                        font-size: 12px;
+                        font-family: 'Exo';
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+
+        .card2 {
+            width: 708px;
+            height: max-content;
+            border-radius: 25px;
+            background-color: #ffffff;
+            box-shadow: 0px 1px 8px rgba(2, 5, 74, 0.33);
+            margin-top: 38px;
+            padding: 30px 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+
+            .top {
+                display: flex;
+                flex-direction: row;
+                gap: 54px;
+
+                .chargeImg {
+                    width: 252px;
+                    height: 259px;
+                }
+
+                .inputs {
+                    width: 250px;
+
+                    .recharge {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 15px;
+
+                        .txtBottom {
+                            display: flex;
+                            flex-direction: row;
+                            gap: 4px;
+                            align-items: center;
+
+                            .txt {
+                                font-weight: 500;
+                                font-family: 'Exo';
+                                font-size: 9px;
+                                color: #818b95;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .bottom {
+                display: flex;
+                flex-direction: row;
+                gap: 40px;
+                align-items: center;
+
+                .contCard {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 7px;
+                    position: relative;
+
+                    .title {
+                        font-family: 'Exo';
+                        font-size: 12px;
+                        color: #818b95;
+                        font-weight: 500;
+                        margin-left: 7px;
+                    }
+
+                    .card {
+                        width: 270px;
+                        height: 187px;
+                        filter: drop-shadow(7px -7px 2px rgba(0, 8, 20, 0.26));
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+
+                    .infoCard {
+                        position: absolute;
+                        top: 40px;
+                        left: 20px;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+
+                        .text1 {
+                            font-family: 'Exo';
+                            font-size: 11px;
+                            color: #ffffff;
+                            font-weight: 500;
+                        }
+
+                        .noCard {
+                            display: flex;
+                            flex-direction: column;
+                            margin-top: 15px;
+
+                            .txtNo {
+                                font-family: 'Exo';
+                                font-size: 11px;
+                                color: #ffffff;
+                                font-weight: 500;
+
+                            }
+
+                            .no {
+                                font-family: 'Exo';
+                                font-size: 24px;
+                                color: #ffffff;
+                                font-weight: 500;
+                            }
+                        }
+
+                        .both {
+                            display: flex;
+                            flex-direction: row;
+                            gap: 35px;
+                            justify-content: flex-end;
+
+                            .date {
+                                display: flex;
+                                flex-direction: column;
+                                gap: 5px;
+
+                                .txtDate {
+                                    font-family: 'Exo';
+                                    font-size: 9px;
+                                    color: #ffffff;
+                                    font-weight: 500;
+                                    text-align: right;
+                                }
+
+                                .txtNumber {
+                                    font-family: 'Exo';
+                                    font-size: 11px;
+                                    color: #ffffff;
+                                    text-decoration: none solid rgb(255, 255, 255);
+                                    text-align: right;
+                                }
+                            }
+
+                            .status {
+                                display: flex;
+                                flex-direction: column;
+                                gap: 5px;
+
+                                .txtStatus {
+                                    font-family: 'Exo';
+                                    font-size: 9px;
+                                    color: #ffffff;
+                                    font-weight: 500;
+                                    text-align: right;
+                                }
+
+                                .txt {
+                                    font-family: 'Exo';
+                                    font-size: 11px;
+                                    color: #06d6a0;
+                                    font-weight: 500;
+                                    text-align: right;
+                                }
+
+                                .txtRed {
+                                    font-family: 'Exo';
+                                    font-size: 11px;
+                                    color: red;
+                                    font-weight: 500;
+                                    text-align: right;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .bottomRight {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+
+                    .gray {
+                        font-family: 'Exo';
+                        font-size: 12px;
+                        color: #818b95;
+                        font-weight: 500;
+
+                        label {
+                            font-family: 'Exo';
+                            font-size: 12px;
+                            color: #292828;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

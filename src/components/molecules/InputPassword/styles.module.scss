@@ -1,0 +1,176 @@
+
+
+.input {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 5px;
+  position: relative;
+
+  .input_labels{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .titles_inputs{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .icon_right {
+    position: absolute;
+    right: 6%;
+    top: 22%;
+    z-index: 10;
+    font-size: 12px;
+    color: #a0a0a3;
+    text-align: right;
+    cursor: pointer;
+    &:hover{
+      color: #050505;
+    }
+  }
+  .icon_right_invalid{
+    position: absolute;
+    right: 6%;
+    top: 24%;
+    z-index: 10;
+    font-size: 12px;
+    color: #a0a0a3;
+    text-align: right;
+    cursor: pointer;
+    &:hover{
+      color: #050505;
+    }
+  }
+
+  label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #425885;
+    font-family: 'Exo';
+  }
+  
+  .invalidSpan{
+    color: #cf1515;
+    font-weight: bold;
+  }
+  span{
+    font-size: 12px;
+    color: #a0a0a3;
+    text-decoration: none solid rgb(160, 160, 163);
+    text-align: right;
+    font-family: 'Exo';
+  }
+
+  input[class~="p-inputtext"] {
+    width: 100%;
+    height: 45px;
+    padding: 0px 20px 0px 10px;
+    border: 1px solid #d5dfe8;
+    border-radius: 10px;
+    font-size: 12px;
+    font-family: 'Exo';
+    font-weight: 600;
+    color: #455362;
+    background-color: #ffffff;
+    cursor: pointer;
+
+    &:focus {
+      border: 1px solid #ff9e1b;
+      box-shadow: none;
+      outline: 0;
+    }
+    &::placeholder {
+      color: #455362;
+    }
+  }
+
+   /* Styles for hide arrows in number type input */
+ 
+
+   /* Styles for invalid input */
+
+  .invalid[class~="p-inputtext"] {
+    border: 1px solid #cf1515;
+
+    &:hover {
+      border: 1px solid #cf1515;
+    }
+
+    &:focus {
+      border: 1px solid #cf1515;
+    }
+  }
+
+  /* Styles for read only input */
+
+  .readonly[class~="p-inputtext"] {
+    border: 1px solid #c5d4cb;
+    background-color: #e4ede7;
+
+    &:focus {
+      border: 1px solid #c5d4cb;
+    }
+  }
+
+  /* Styles for disabled input */
+
+  .disabled[class~="p-inputtext"] {
+    border: 1px solid #c5d4cb;
+    background-color: #e4ede7;
+
+    &:focus {
+      border: 1px solid #c5d4cb;
+    }
+  }
+}
+
+.invalid_message {
+  font-size: 11px;
+  color: #cf1515 !important;
+  margin-left: 5px;
+  font-family: 'Exo';
+}
+
+.input {
+  position: relative;
+  margin-bottom: 1rem; // Espaciado opcional entre los inputs
+}
+
+.input_labels {
+  position: absolute;
+  pointer-events: none;
+  left: 0.75rem; // Ajusta el espacio del label a la izquierda del input
+  top: 0.5rem; // Ajusta la distancia vertical del label
+  transition: top 0.3s, font-size 0.3s;
+  font-size: 1rem; // Tamaño de fuente original del label
+  color: #495057; // Color del label
+}
+
+.input_labels .status {
+  font-size: 0.75rem; // Tamaño de fuente del estado (requerido/ opcional)
+  color: #6c757d; // Color del estado
+}
+
+.input_labels label {
+  display: block;
+  transition: transform 0.3s, font-size 0.3s;
+  transform-origin: top left;
+}
+
+.input:focus-within .input_labels,
+.input:not(:placeholder-shown) + .input_labels {
+  top: 0; // Mueve el label hacia arriba cuando el input está enfocado o tiene valor
+  font-size: 0.75rem; // Reduce el tamaño del label al moverlo hacia arriba
+  color: #007bff; // Color del label cuando está enfocado
+}
+
+.input:focus-within .input_labels label,
+.input:not(:placeholder-shown) + .input_labels label {
+  transform: translateY(-1.5rem) scale(0.9); // Mueve y escala el label cuando el input está enfocado o tiene valor
+}

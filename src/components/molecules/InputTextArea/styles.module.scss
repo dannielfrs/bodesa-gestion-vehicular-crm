@@ -1,0 +1,134 @@
+/**
+ * Styles for base component
+ */
+.input {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  .titles_inputs {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    label {
+      font-size: 14px;
+      font-family: 'Exo';
+      color: #455362;
+      margin-bottom: 0;
+    }
+
+    span {
+      font-size: 12px;
+      color: #a0a0a3;
+    }
+
+    .invalid_text {
+      color: #cf1515;
+    }
+  }
+
+  textarea {
+    width: 100%;
+    padding: 10px 20px 95px 10px;
+    border: 1px solid #d5dfe8;
+    border-radius: 10px;
+    font-size: 14px;
+    color: #818b95;
+    background-color: #ffffff;
+    cursor: pointer;
+    resize: none;
+    font-family: 'Exo';
+
+    &:focus {
+      border: 1px solid #d5dfe8!important;
+      box-shadow: none !important;
+      outline: 0;
+    }
+
+    &::placeholder {
+      color: #9c9c9c;
+    }
+  }
+}
+
+/**
+ * Styles for read only input
+ */
+ .secondary {
+  .titles_inputs {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    label {
+      font-size: 12px;
+      font-weight: 600;
+      font-family: 'Exo';
+      color: #455362;
+      margin-bottom: 0;
+    }
+
+    span {
+      font-size: 12px;
+      color: #a0a0a3;
+    }
+
+    .invalid_text {
+      color: #cf1515;
+    }
+  }
+
+  textarea{
+    background-color: #ffffff;
+    cursor: default;
+    border: 1px solid #d5dfe8;
+  }
+
+  &:focus {
+    border: 1px solid #d5dfe8 !important;
+  }
+}
+
+/**
+ * Styles for read only input
+ */
+.readonly[class~="p-inputtext"] {
+  background-color: #e6e6e6;
+  cursor: default;
+
+  &:focus {
+    border: 1px solid #d5d8e0 !important;
+  }
+}
+
+/**
+ * Styles for disabled input
+ */
+.disabled[class~="p-inputtext"] {
+  color: #b8b8b8;
+}
+
+/**
+ * Styles for invalid input
+ */
+.invalid[class~="p-inputtext"] {
+  border: 1px solid #cf1515 !important;
+
+  &:hover {
+    border: 1px solid #cf1515 !important;
+  }
+
+  &:focus {
+    border: 1px solid #cf1515 !important;
+  }
+}
+
+.invalid_message {
+  font-size: 11px;
+  color: #cf1515;
+  margin-left: 5px;
+}

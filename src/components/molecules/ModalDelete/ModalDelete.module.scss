@@ -1,0 +1,70 @@
+.modal{
+    border-radius: 25px;
+    background-color: #455362;
+
+    [class~="p-dialog-content"] {
+        background: #ffffff;
+        color: #495057;
+        border-radius: 25px;
+    }
+    .ModalDelete{
+        width: 811px;
+        height: 388px;
+        border-radius: 25px;
+        background-color: #fff;
+        box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.2);
+
+        .modal_header {
+            height: 54px;
+            width: 100%;
+            background-color: #455362;
+        }
+
+        .ContainerWhite{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 75%;
+
+            .textImage{
+                display: flex;
+                flex-direction: row;
+                gap: 63px;
+                padding: 44px 42px;
+    
+                .text{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+                    .blueBold{
+                        width: 482px;
+                        font-family: 'Exo';
+                        font-size: 24px;
+                        color: #455362;
+                        font-weight: 900;
+                    }
+    
+                    .list{
+                        margin-left: 18px;
+                        ul{
+                            li{
+                                font-weight: 600;
+                                font-family: 'Exo';
+                                font-size: 16px;
+                                color: #818b95;
+                            }
+                        }
+                    }
+                }
+            }
+    
+            .buttons{
+                display: flex;
+                flex-direction: row;
+                gap: 30px;
+                margin-right: 36px;
+                justify-content: flex-end;
+            }
+        }
+    }
+}

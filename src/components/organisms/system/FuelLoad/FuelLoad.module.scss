@@ -1,0 +1,124 @@
+.FuelLoad {
+    display: flex;
+    flex-direction: row;
+
+    .ContainerRequests {
+        width: 400px;
+        box-shadow: 2px 7px 5px rgba(2, 5, 74, 0.2);
+        padding: 37px 0px 37px 69px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        height: calc(100vh - 95px);
+
+        .title {
+            font-weight: 700;
+            font-size: 14px;
+            color: #455362;
+        }
+
+        .requests {
+            margin-top: 25px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            height: 80vh;
+            overflow: scroll;
+            overflow-x: unset;
+            padding: 2px;
+        }
+
+    }
+
+    .ContainerRequests {
+        width: 400px;
+        box-shadow: 2px 7px 5px rgba(2, 5, 74, 0.2);
+        padding: 37px 0px 37px 69px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        height: calc(100vh - 95px);
+
+        .title {
+            font-weight: 700;
+            font-size: 14px;
+            color: #455362;
+        }
+
+        .buttonSelection {
+            margin: 30px 0px;
+
+            button {
+                font-size: 12px;
+                font-family: 'Exo';
+                font-weight: 600;
+            }
+        }
+
+        .requests2 {
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            height: 80vh;
+            overflow: scroll;
+            overflow-x: unset;
+            padding: 2px;
+        }
+    }
+
+    .tabsRequest {
+        .tabsBtns {
+            height: 104px;
+            box-shadow: 0px 1px 5px rgba(2, 5, 74, 0.2);
+            width: calc(100vw - 689px);
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            padding-left: 60px;
+        }
+
+        .tabsBtns3 {
+            height: 104px;
+            width: calc(100vw - 689px);
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            padding-left: 94px;
+        }
+
+        .container {
+            margin-left: 5px;
+            margin-top: 5px;
+
+            .tabView {
+                .TabPanel {
+                    .contFuel {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 17px;
+                        height: calc(100vh - 207px);
+
+                        .textBold {
+                            font-size: 20px;
+                            color: #455362;
+                            font-weight: 900;
+                            font-family: 'Exo';
+                        }
+
+                        .text {
+                            font-weight: 500;
+                            font-size: 16px;
+                            color: #455362;
+                            width: 357px;
+                            text-align: center;
+                            font-family: 'Exo';
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

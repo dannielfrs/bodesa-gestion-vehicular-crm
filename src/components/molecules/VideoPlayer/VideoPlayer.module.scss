@@ -1,0 +1,62 @@
+.videoPlayer{
+    .containerVideo{
+        width: 258px;
+        height: 44px;
+        border-radius: 10px;
+        background-color: #ffffff;
+        box-shadow: 0px 1px 8px rgba(2,5,74,0.33);
+        border: 1px solid #455362;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0px 16px 0px 20px;
+        align-items: center;
+
+        .nameImage{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 10px;
+
+            .name{
+                font-weight: 600;
+                font-family: 'Exo';
+                font-size: 12px;
+                color: #455362;
+            }
+        }
+
+        .play{
+            cursor: pointer;
+        }
+    }
+
+    .modalVideo{
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        background-color: rgba(2,5,74,0.33);
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .closevideo{
+            cursor: pointer;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 40px;
+            height: 40px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        video{
+            height: 100%;
+        }
+    }
+}

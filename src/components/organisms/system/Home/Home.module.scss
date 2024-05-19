@@ -1,0 +1,236 @@
+.home{
+    .containerCards{
+        display: flex;
+        flex-direction: row;
+        gap: 60px;
+        justify-content: center;
+        margin-top: 85px;
+
+        .card{
+            width: 363px;
+            height: 109px;
+            border-radius: 25px;
+            background: #f27e18;
+            position: relative;
+            cursor: pointer;
+
+            img{
+                opacity: 0.65;
+                position: absolute;
+                bottom: 0px;
+            }
+
+            .text{
+                padding-left: 63px;
+                height: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                gap: 45px;
+                align-items: center;
+
+                .both{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+                    .text1{
+                        font-weight: 700;
+                        font-size: 14px;
+                        color: #ffffff;
+                    }
+    
+                    .text2{
+                        font-size: 16px;
+                        color: #ffffff;
+                        font-weight: 600; 
+                    }
+                }
+
+                .number{
+                    font-weight: 600;
+                    font-size: 36px;
+                    color: #ffffff;
+                }
+            }
+        }
+        .card2{
+            width: 363px;
+            height: 109px;
+            border-radius: 25px;
+            background: #455362;
+            position: relative;
+            cursor: pointer;
+
+            img{
+                opacity: 0.65;
+                position: absolute;
+                bottom: 0px;
+            }
+
+            .text{
+                padding-left: 63px;
+                height: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                gap: 45px;
+                align-items: center;
+
+                .both{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+                    .text1{
+                        font-weight: 700;
+                        font-size: 14px;
+                        color: #ffffff;
+                    }
+    
+                    .text2{
+                        font-size: 16px;
+                        color: #ffffff;
+                        font-weight: 600; 
+                    }
+                }
+
+                .number{
+                    font-weight: 600;
+                    font-size: 36px;
+                    color: #ffffff;
+                }
+            }
+        }
+        .card3{
+            width: 363px;
+            height: 109px;
+            border-radius: 25px;
+            background: #606773;
+            position: relative;
+            cursor: pointer;
+
+            img{
+                opacity: 0.65;
+                position: absolute;
+                bottom: -13px;
+                left: -12px;
+                transform: rotateZ(10deg);
+            }
+
+            .text{
+                padding-left: 63px;
+                height: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                gap: 45px;
+                align-items: center;
+
+                .both{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+                    .text1{
+                        font-weight: 700;
+                        font-size: 14px;
+                        color: #ffffff;
+                    }
+    
+                    .text2{
+                        font-size: 16px;
+                        color: #ffffff;
+                        font-weight: 600; 
+                    }
+                }
+
+                .number{
+                    font-weight: 600;
+                    font-size: 36px;
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+
+    .tables{
+        margin-top: 100px;
+        display: flex;
+        flex-direction: row;
+        gap: 100px;
+        justify-content: center;
+
+        .table1{
+            width: 798px;
+            height: max-content;
+            padding: 13px 30px;
+            border-radius: 15px;
+            box-shadow: 0px 1px 5px rgba(2,5,74,0.2);
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+
+            .title{
+                font-weight: 700;
+                font-size: 16px;
+                color: #455362;
+
+                label{
+                    font-size: 16px;
+                    color: #ff9e1b;
+                    font-weight: 700;
+                }
+            }
+        }
+
+        .table2{
+            width: 472px;
+            height: max-content;
+            padding: 13px 30px;
+            border-radius: 15px;
+            box-shadow: 0px 1px 5px rgba(2,5,74,0.2);
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            .title{
+                font-weight: 700;
+                font-size: 16px;
+                color: #455362;
+
+                label{
+                    font-size: 16px;
+                    color: #ff9e1b;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}
+
+.table_column_name{
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+
+    .textUser{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        .name{
+           color: #818b95;
+           font-size: 12px;
+           font-weight: 500;
+        }
+
+        .text1{
+            font-size: 12px;
+            color: #818b95;
+            font-weight: 500;
+
+            label{
+                font-size: 12px;
+                color: #ef476f;
+                font-weight: 500;
+            }
+        }
+    }
+}

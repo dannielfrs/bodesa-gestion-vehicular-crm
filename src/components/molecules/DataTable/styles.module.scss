@@ -1,0 +1,370 @@
+/* Styles for base component */
+
+.datatable {
+    width: 100%;
+    overflow: visible !important;
+
+    &>div {
+        transform: scale(1);
+        overflow: visible !important;
+    }
+}
+
+/* Styles for color variant */
+
+/* Primary color */
+
+.primary {
+    [class~="p-datatable"] {
+        [class~="p-datatable-striped"] {
+            [class~="p-datatable-tbody"] {
+                >tr[class~="p-row-odd"] {
+                    background: unset !important;
+                }
+            }
+        }
+
+        [class~="p-datatable-wrapper"] {
+            position: static;
+            // border: 1px solid #dee0e3;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            border-bottom: none;
+            max-height: unset !important;
+
+            [class~="p-datatable-table"] {
+                width: 100%;
+                table-layout: fixed;
+                border-collapse: collapse;
+
+                [class~="p-datatable-thead"] {
+                    >tr>th {
+                        height: 60px;
+                        max-height: 60px;
+                        background: #ffffff !important;
+                        text-align: center !important;
+                        border-bottom: 1px solid #d5dfe8 !important;
+                        font-size: 14px;
+                        font-weight: 600;
+                        color: #455362;
+                        font-family: 'Exo';
+                    }
+                }
+
+                [class~="p-datatable-tbody"] {
+                    >tr>td {
+                        border-bottom: 1px solid #d5dfe8 !important;
+                        text-align: inherit;
+                        background-color: #ffffff;
+                    }
+
+                    >tr[class~="p-selectable-row"] {
+                        border-bottom: 1px solid #d5dfe8 !important;
+                        height: 51px;
+
+                    }
+
+                    >tr[class~="p-selectable-row"]:focus {
+                        outline: unset;
+                    }
+
+                    >tr[class~="p-selectable-row"]:hover {
+                        background-color: #f2f4f7;
+
+                        td {
+                            color: #292828;
+                        }
+                    }
+
+                    >tr[class~="p-highlight"] {
+                        background: #fff !important;
+                        color: #119239 !important;
+                        outline: none !important;
+                    }
+                }
+            }
+        }
+
+        [class~="p-paginator"] {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding: 15px 15px;
+            position: relative;
+            background: #ffffff;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            border: 1px solid #dee0e3;
+            border-top: none;
+
+            .datatable_footer {
+                margin-right: auto;
+                font-size: 14px;
+                color: #292828;
+
+                span {
+                    font-weight: 700;
+                }
+            }
+
+            button {
+                min-width: 25px;
+                height: 25px;
+                border-radius: 50%;
+                border: none;
+
+                &:focus {
+                    box-shadow: none;
+                }
+
+                &:active {
+                    box-shadow: none;
+                }
+            }
+
+            [class~="p-paginator-pages"] {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                min-width: 32px;
+                height: 32px;
+                border-radius: 50%;
+                transition: box-shadow 0.2s;
+                gap: 10px;
+
+                button {
+                    min-width: 25px;
+                    height: 25px;
+                    border-radius: 50%;
+                    font-size: 12px;
+                    font-weight: bold;
+
+                    &:hover {
+                        min-width: 25px;
+                        height: 25px;
+                        border-radius: 50%;
+                    }
+                }
+
+                [class~="p-paginator-page"][class~="p-highlight"] {
+                    background: #405563 !important;
+                    color: #fff !important;
+
+                    &:focus {
+                        border-color: none !important;
+                    }
+                }
+            }
+        }
+
+        [class~="p-datatable-header"] {
+            background: transparent;
+            border: none;
+            padding: 0;
+            padding-bottom: 20px;
+        }
+
+        [class~="p-sortable-column"]:focus {
+            box-shadow: none;
+        }
+
+        [class~="p-sortable-column"]:not([class~="p-highlight"]):not([class~="p-sortable-disabled"]):hover {
+            background: #ffffff !important;
+        }
+
+        [class~="p-sortable-column"] {
+            justify-content: center;
+        }
+
+        [class~="p-column-header-content"] {
+            justify-content: center;
+        }
+    }
+}
+
+/* Secondary table */
+.secondary {
+    [class~="p-datatable"] {
+        height: 600px !important;
+        overflow: scroll !important;
+        [class~="p-datatable-striped"] {
+            [class~="p-datatable-tbody"] {
+                >tr[class~="p-row-odd"] {
+                    background: unset !important;
+                }
+            }
+        }
+
+        [class~="p-datatable-wrapper"] {
+            position: static;
+            // border: 1px solid #dee0e3;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            border-bottom: none;
+            max-height: unset !important;
+
+            [class~="p-datatable-table"] {
+                width: 100%;
+                table-layout: fixed;
+                border-collapse: collapse;
+
+                [class~="p-datatable-thead"] {
+                    border: unset;
+                    >tr>th {
+                        height: 70px !important;
+                        max-height: 70px !important;
+                        background: #ffffff !important;
+                        text-align: center !important;
+                        border-bottom: 1px solid #d5dfe8 !important;
+                        font-size: 12px;
+                        font-weight: 900;
+                        color: #455362;
+                        font-family: 'Exo';
+                    }
+                }
+
+                [class~="p-datatable-tbody"] {
+                    >tr>td {
+                        border-bottom: 1px solid #d5dfe8 !important;
+                        text-align: inherit;
+                        background-color: #ffffff;
+                        height: 70px !important;
+                    }
+
+                    >tr[class~="p-selectable-row"] {
+                        border-bottom: 1px solid #d5dfe8 !important;
+                        height: 51px;
+
+                    }
+
+                    >tr[class~="p-selectable-row"]:focus {
+                        outline: unset;
+                    }
+
+                    >tr[class~="p-selectable-row"]:hover {
+                        background-color: #f2f4f7;
+
+                        td {
+                            color: #292828;
+                        }
+                    }
+
+                    >tr[class~="p-highlight"] {
+                        background: #fff !important;
+                        color: #119239 !important;
+                        outline: none !important;
+                    }
+                }
+            }
+        }
+
+        [class~="p-paginator"] {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding: 15px 15px;
+            position: relative;
+            background: #ffffff;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            border: 1px solid #dee0e3;
+            border-top: none;
+
+            .datatable_footer {
+                margin-right: auto;
+                font-size: 14px;
+                color: #292828;
+
+                span {
+                    font-weight: 700;
+                }
+            }
+
+            button {
+                min-width: 25px;
+                height: 25px;
+                border-radius: 50%;
+                border: none;
+
+                &:focus {
+                    box-shadow: none;
+                }
+
+                &:active {
+                    box-shadow: none;
+                }
+            }
+
+            [class~="p-paginator-pages"] {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                min-width: 32px;
+                height: 32px;
+                border-radius: 50%;
+                transition: box-shadow 0.2s;
+                gap: 10px;
+
+                button {
+                    min-width: 25px;
+                    height: 25px;
+                    border-radius: 50%;
+                    font-size: 12px;
+                    font-weight: bold;
+
+                    &:hover {
+                        min-width: 25px;
+                        height: 25px;
+                        border-radius: 50%;
+                    }
+                }
+
+                [class~="p-paginator-page"][class~="p-highlight"] {
+                    background: #405563 !important;
+                    color: #fff !important;
+
+                    &:focus {
+                        border-color: none !important;
+                    }
+                }
+            }
+        }
+
+        [class~="p-datatable-header"] {
+            background: transparent;
+            border: none;
+            padding: 0;
+            padding-bottom: 20px;
+        }
+
+        [class~="p-sortable-column"]:focus {
+            box-shadow: none;
+        }
+
+        [class~="p-sortable-column"]:not([class~="p-highlight"]):not([class~="p-sortable-disabled"]):hover {
+            background: #ffffff !important;
+        }
+
+        [class~="p-sortable-column"] {
+            justify-content: center;
+        }
+
+        [class~="p-column-header-content"] {
+            justify-content: center;
+        }
+    }
+}
+
+.datatable_column {
+    max-width: 500px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 0 10px !important;
+    font-size: 12px;
+    color: #292828;
+    font-family: 'Exo';
+    font-weight: 600;
+}

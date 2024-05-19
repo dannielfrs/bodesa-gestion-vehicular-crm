@@ -1,0 +1,55 @@
+.modal {
+    border-radius: 25px;
+    background-color: #455362;
+
+    [class~="p-dialog-content"] {
+        background: #ffffff;
+        color: #495057;
+        border-radius: 25px;
+    }
+
+    .modal_container {
+        width: 811px;
+        height: 465px;
+        border-radius: 25px;
+        background-color: #fff;
+        box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.2);
+
+        .modal_header {
+            height: 54px;
+            width: 100%;
+            background-color: #455362;
+        }
+
+        .modal_body {
+            padding: 44px;
+            display: flex;
+            flex-direction: row;
+            gap: 60px;
+
+            .text {
+                .title {
+                    font-family: 'Exo';
+                    font-size: 32px;
+                    color: #455362;
+                    font-weight: 900;
+                }
+
+                .gray {
+                    font-weight: 600;
+                    font-family: 'Exo';
+                    font-size: 16px;
+                    color: #818b95;
+                }
+
+                .buttons {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 30px;
+                    justify-content: flex-end;
+                    margin-top: 45px;
+                }
+            }
+        }
+    }
+}

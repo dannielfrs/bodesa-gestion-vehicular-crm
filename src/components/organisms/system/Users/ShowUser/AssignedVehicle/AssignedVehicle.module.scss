@@ -1,0 +1,103 @@
+.AssignedVehicle{
+    margin-top: 64px;
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    .right{
+        width: 881px;
+        height: auto;
+        border-radius: 15px;
+        box-shadow: 0px 1px 5px rgba(2,5,74,0.2);
+        padding: 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        .title{
+            font-family: 'Exo';
+            font-size: 20px;
+            color: #455362;
+            font-weight: 700;
+        }
+
+        .information{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            .licensePlates{
+                display: flex;
+                flex-direction: row;
+                gap: 30px;
+                margin-top: 20px;
+            }
+
+            .textVehicle{
+                font-family: 'Exo';
+                font-size: 12px;
+                font-weight: 600;
+                color: #818b95;
+            }
+        }
+    }
+
+    .left{
+        width: 582px;
+        height: 557px;
+        border-radius: 15px;
+        fill: #ffffff;
+        box-shadow: 0px 1px 5px rgba(2,5,74,0.2);
+        padding: 30px 25px;
+
+        .header{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            
+            .titleVehicle{
+                font-weight: 700;
+                font-family: 'Exo';
+                font-size: 16px;
+                color: #455362;
+            }
+
+            .button{
+                width: 154px;
+            }
+        }
+        .contImages{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 30px;
+            .image{
+                width: 257px;
+                height: 202px;
+                border-radius: 15px;
+                fill: #ffffff;
+                box-shadow: 0px 1px 5px rgba(2,5,74,0.2);
+                cursor: pointer;
+                position: relative;
+
+                img{
+                    width: 100%;
+                    border-radius: 15px;
+                    height: 100%;
+                    object-fit: cover;
+                }
+
+                &:hover{
+                    .backWhite{
+                        background-color: rgba(255, 255, 255, 0.7);
+                        width: 257px;
+                        height: 202px;
+                        border-radius: 15px;
+                        position: absolute;
+                        top: 0;
+                    }
+                }
+            } 
+        }
+    }
+}

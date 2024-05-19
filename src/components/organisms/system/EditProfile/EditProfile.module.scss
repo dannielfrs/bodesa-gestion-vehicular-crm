@@ -1,0 +1,111 @@
+.dFlex{
+    display: flex;
+    flex-direction: row;
+}
+.pR40pxW200{
+    padding-right: 8px;
+    width: 262px;
+}
+.toastGreen{
+    padding: 8px 0 2px;
+    color:  #05bc8d;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Exo';
+}
+
+.toastGray{
+    font-family: 'Exo';
+    font-size: 14px;
+    color: #455362;
+}
+.imagePading{
+    padding: 0 10px;
+    width: 90px;
+}
+
+.EditProfile{
+    padding: 55px 83px;
+    height: calc(100vh - 95px);
+    overflow: scroll;
+    .top{
+        display: flex;
+        flex-direction: row;
+        gap: 25px;
+        .textProfile{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            .text{
+                font-weight: 700;
+                font-family: 'Exo';
+                font-size: 24px;
+                color: #455362;
+            }
+            .text2{
+                font-weight: 600;
+                font-family: 'Exo';
+                font-size: 14px;
+                color: #292828;
+            }
+        }
+    }
+
+    .addPhoto{
+        width: 207px;
+        margin-top: 51px;
+        margin-left: 48px;
+    }
+
+    .updateAccesses{
+        width: 812px;
+        height: max-content;
+        border-radius: 25px;
+        background-color: #ffffff;
+        box-shadow: 4px 5px 11px rgba(2,21,31,0.33);
+        padding: 12px 38px;
+        margin-top: 80px;
+        margin-left: 48px;
+
+        .first{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            .left{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+    
+                .title1{
+                    font-weight: 700;
+                    font-family: 'Exo';
+                    font-size: 16px;
+                    color: #455362;
+                }
+    
+                .title2{
+                    font-weight: 600;
+                    font-family: 'Exo';
+                    font-size: 14px;
+                    color: #292828;
+                }
+            }
+    
+            .right{
+                width: 174px;
+            }
+        }
+
+        .second{
+            margin-top: 36px;
+            display: flex;
+            flex-direction: column;
+            gap: 35px;
+
+            .buttonSave{
+                width: 357px;
+            }
+        }
+    }
+}

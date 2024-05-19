@@ -1,0 +1,103 @@
+.Administrators{
+    padding: 34px 30px;
+
+    .topHeader{
+        display: flex;
+        flex-direction: row;
+        gap: 25px;
+        margin-left: 53px;
+
+        .text{
+            .title{
+                font-family: 'Exo';
+                font-size: 24px;
+                color: #455362;
+                font-weight: 700;
+
+                label{
+                    color: #ff9e1b;
+                    font-family: 'Exo';
+                    font-size: 24px;
+                    font-weight: 700;
+                }
+            }
+
+            .subtitle{
+                font-weight: 600;
+                font-family: 'Exo';
+                font-size: 14px;
+                color: #292828;
+            }
+        }
+    }
+
+    .inputs{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; 
+        margin-bottom: 13px;
+        margin-top: 56px;
+        padding-left: 108px;
+
+        .center{
+            display: flex;
+            flex-direction: row;
+            gap: 40px;
+        }
+
+        .addUser{
+            display: flex;
+            flex-direction: column;
+            width: 107px;
+            height: 79px;
+            gap: 8px;
+            align-items: center;
+
+            .blue{
+                display: none;
+            }
+
+            &:hover{
+                .blue{
+                    width: 107px;
+                    height: 26px;
+                    border-radius: 15px;
+                    background-color: #000814;
+                    font-weight: 600;
+                    font-family: 'Exo';
+                    font-size: 12px;
+                    color: #ffffff;
+                    text-align: center; 
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+
+        }
+     }
+}
+.statusAccount{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+
+    .statusBlue{
+        font-family: 'Exo';
+        font-size: 12px;
+        color: #06d6a0;
+        font-weight: 700;
+        width: 144px;
+        text-align: center;
+    }
+    
+    .statusRed{
+        font-family: 'Exo';
+        font-size: 12px;
+        width: 144px;
+        color: #ef476f;
+        font-weight: 700;
+        text-align: center;
+    }
+}

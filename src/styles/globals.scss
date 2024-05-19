@@ -1,0 +1,216 @@
+@import '../styles/icons.scss';
+@import '../styles/tooltip.scss';
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+  --max-width: 1100px;
+  --border-radius: 12px;
+  --font-mono: 'Exo';
+
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+
+  --primary-glow: conic-gradient(
+    from 180deg at 50% 50%,
+    #16abff33 0deg,
+    #0885ff33 55deg,
+    #54d6ff33 120deg,
+    #0071ff33 160deg,
+    transparent 360deg
+  );
+  --secondary-glow: radial-gradient(
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0)
+  );
+
+  --tile-start-rgb: 239, 245, 249;
+  --tile-end-rgb: 228, 232, 233;
+  --tile-border: conic-gradient(
+    #00000080,
+    #00000040,
+    #00000030,
+    #00000020,
+    #00000010,
+    #00000010,
+    #00000080
+  );
+
+  --callout-rgb: 238, 240, 241;
+  --callout-border-rgb: 172, 175, 176;
+  --card-rgb: 180, 185, 188;
+  --card-border-rgb: 131, 134, 135;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+
+    --primary-glow: radial-gradient(rgba(1, 65, 255, 0.4), rgba(1, 65, 255, 0));
+    --secondary-glow: linear-gradient(
+      to bottom right,
+      rgba(1, 65, 255, 0),
+      rgba(1, 65, 255, 0),
+      rgba(1, 65, 255, 0.3)
+    );
+
+    --tile-start-rgb: 2, 13, 46;
+    --tile-end-rgb: 2, 5, 19;
+    --tile-border: conic-gradient(
+      #ffffff80,
+      #ffffff40,
+      #ffffff30,
+      #ffffff20,
+      #ffffff10,
+      #ffffff10,
+      #ffffff80
+    );
+
+    --callout-rgb: 20, 20, 20;
+    --callout-border-rgb: 108, 108, 108;
+    --card-rgb: 100, 100, 100;
+    --card-border-rgb: 200, 200, 200;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
+
+*::-webkit-scrollbar {
+  width: 3px;
+  height: 2px;
+  border-radius: 10px;
+}
+*::-webkit-scrollbar-track {
+  background: transparent;
+  border: 1px solid 8px 4px 14px rgba(18, 18, 18, 0.07);
+  width: 15px !important;
+  border-radius: 20px;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #7e8a91;
+  border-radius: 10px;
+  border: 0 solid #FFFFFF;
+}
+*::-webkit-scrollbar:horizontal {
+  width: 13px !important;
+  height: 13px !important;
+  border-radius: 10px;
+}
+*::-webkit-scrollbar-track:horizontal {
+  background: transparent;
+  border: 1px solid 8px 4px 14px rgba(18, 18, 18, 0.07);
+  width: 15px !important;
+  height: 13px !important;
+  border-radius: 20px;
+}
+*::-webkit-scrollbar-corner {
+  background-color: transparent; 
+}
+
+*::-webkit-scrollbar-thumb:horizontal {
+  background-color: #7e8a91;
+  border-radius: 10px;
+  height: 13px !important;
+}
+
+.p-tabview-nav {
+  background: #ffffff;
+  border: unset !important;
+  border-width: 0 0 2px 0;
+}
+
+.p-galleria-thumbnail-container {
+  background: rgba(0, 0, 0, 0.9);
+  padding: 1rem 0.25rem;
+  display: none !important;
+}
+
+.p-inputswitch {
+  width: 31px !important;
+  height: 20px;
+
+  .p-inputswitch-slider:before {
+    background: #ffffff;
+    width: 10px;
+    height: 10px;
+    left: -3px;
+    margin-top: -6px;
+    border-radius: 50%;
+    transition-duration: 0.2s;
+  }
+}
+
+.p-toast-message-secondary{
+  border-radius: 20px;
+  background-color: white;
+  padding: 8px;
+}
+
+.switch{
+  .p-inputswitch .p-inputswitch-slider{
+    background: #fff;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s;
+    border-radius: 30px;
+    border: 2px solid #ef476f;
+    outline-color: transparent;
+  }
+  .p-inputswitch.p-highlight .p-inputswitch-slider {
+    background: #fff;
+    border: 2px solid #0d89ec;
+  }
+  .p-inputswitch:not(.p-disabled):has(.p-inputswitch-input:hover).p-highlight .p-inputswitch-slider {
+    background: #fff;
+    border: 2px solid #0d89ec;
+  }
+
+  .p-inputswitch .p-inputswitch-slider:before {
+    background: red;
+    width: 10px;
+    height: 10px;
+    left: 2px;
+    margin-top: -5px;
+    border-radius: 50%;
+    transition-duration: 0.2s;
+  }
+  .p-inputswitch:not(.p-disabled):has(.p-inputswitch-input).p-highlight  .p-inputswitch-slider:before {
+    background: #0d89ec;
+    width: 10px;
+    height: 10px;
+    left: -5px;
+    margin-top: -5px;
+    border-radius: 50%;
+    transition-duration: 0.2s;
+  }
+}

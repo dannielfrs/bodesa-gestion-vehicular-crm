@@ -1,0 +1,623 @@
+.NewRequest {
+    position: absolute;
+    top: 199px;
+    padding: 27px;
+
+    .header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: calc(100vw - 780px);
+
+        .left {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 27px;
+
+            .closed {
+                width: 45px;
+                height: 45px;
+                border-radius: 15px;
+                box-shadow: 0px 1px 8px rgba(2, 5, 74, 0.2);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+            }
+
+            .status {
+                font-size: 12px;
+                color: #818b95;
+                font-weight: 600;
+
+                label {
+                    font-weight: 600;
+                    font-size: 12px;
+                    color: #455362;
+                }
+            }
+        }
+
+        .right {
+            display: flex;
+            gap: 30px;
+        }
+    }
+
+    .cards {
+        margin-top: 50px;
+        background-color: #fff;
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+
+        .card1 {
+            width: 386px;
+            border-radius: 25px;
+            background-color: #ffffff;
+            box-shadow: 0px 1px 8px rgba(2, 5, 74, 0.33);
+            padding: 17px 30px;
+            position: relative;
+
+            .user {
+                display: flex;
+                flex-direction: row;
+                gap: 25px;
+                align-items: center;
+                margin-top: 50px;
+                margin-left: 7px;
+
+                .image {
+                    width: 55px;
+                    height: 55px;
+                    border-radius: 50%;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 50%;
+                    }
+                }
+
+                .text {
+                    width: 170px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 8px;
+
+                    .name {
+                        font-weight: 600;
+                        font-size: 16px;
+                        color: #455362;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                    }
+
+                    .type {
+                        font-weight: 600;
+                        font-size: 16px;
+                        color: #ff9e1b;
+                    }
+                }
+            }
+
+            .showUser {
+                width: 73px;
+                height: 22px;
+                border-radius: 15px;
+                background-color: #455362;
+                font-size: 9px;
+                color: #ffffff;
+                text-align: center;
+                font-weight: 600;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 7px;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: #023047;
+                }
+            }
+
+            .info {
+                margin-top: 24px;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                .sheet {
+                    font-weight: 500;
+                    font-size: 12px;
+                    color: #818b95;
+
+                    label {
+                        font-weight: 500;
+                        font-size: 12px;
+                        color: #06d6a0;
+                    }
+                }
+
+                .txtRequest {
+                    font-weight: 500;
+                    font-size: 12px;
+                    color: #818b95;
+
+                    label {
+                        font-weight: 600;
+                        font-size: 12px;
+                        color: #292828;
+                    }
+                }
+
+                .both {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+
+                    .date {
+                        display: flex;
+                        flex-direction: row;
+                        gap: 5px;
+                        font-size: 12px;
+                        color: #818b95;
+                        font-weight: 500;
+
+                        label {
+                            font-weight: 600;
+                            font-size: 12px;
+                            color: #292828;
+                        }
+                    }
+                }
+
+                .infoVehicle {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 15px;
+                    margin-top: 14px;
+
+                    .vehicle {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 5px;
+
+                        .txtGray {
+                            font-weight: 500;
+                            font-size: 12px;
+                            color: #818b95;
+                        }
+
+                        .txtBold {
+                            font-weight: 600;
+                            font-size: 12px;
+                            color: #292828;
+                        }
+                    }
+                }
+
+                .ubication {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+                    margin-top: 5px;
+
+                    .txtGray {
+                        font-weight: 500;
+                        font-size: 12px;
+                        color: #818b95;
+                    }
+
+                    .txtBold {
+                        font-weight: 600;
+                        font-size: 12px;
+                        color: #292828;
+                    }
+                }
+
+                .km {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 30px;
+                    margin-top: 5px;
+
+                    .kmAccept {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 5px;
+
+                        .txtGray {
+                            font-size: 12px;
+                            color: #818b95;
+                            font-weight: 500;
+                        }
+
+                        .txtBold {
+                            font-weight: 600;
+                            font-size: 12px;
+                            color: #292828;
+                        }
+                    }
+                }
+
+                .percent {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+                    margin-top: 5px;
+
+                    .txtGray {
+                        font-weight: 500;
+                        font-size: 12px;
+                        color: #818b95;
+                    }
+
+                    .txtBold {
+                        font-size: 12px;
+                        color: #292828;
+                        font-weight: 600;
+                    }
+                }
+
+                .nomina {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 10px;
+                    margin-top: 5px;
+
+                    .no {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 5px;
+
+                        .txtGray {
+                            font-weight: 500;
+                            font-size: 12px;
+                            color: #818b95;
+                        }
+
+                        .txtBold {
+                            font-weight: 600;
+                            font-size: 12px;
+                            color: #292828;
+                        }
+                    }
+                }
+            }
+        }
+
+        .right {
+            display: flex;
+            flex-direction: column;
+            gap: 26px;
+
+            .card2 {
+                padding: 20px 30px;
+                width: 695px;
+                height: 191px;
+                border-radius: 25px;
+                background: #ffffff;
+                box-shadow: 0px 1px 8px rgba(2, 5, 74, 0.33);
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                .left {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 7px;
+
+                    .bold {
+                        font-weight: 700;
+                        font-size: 16px;
+                        color: #455362;
+                        font-family: 'Exo';
+                    }
+
+                    .gray {
+                        font-weight: 600;
+                        font-size: 12px;
+                        color: #818b95;
+                        font-family: 'Exo';
+                    }
+
+                    .yellow {
+                        font-weight: 700;
+                        font-size: 24px;
+                        color: #ff9e1b;
+                        font-family: 'Exo';
+                    }
+
+                    .red {
+                        font-weight: 600;
+                        font-size: 12px;
+                        color: #ef476f;
+                        font-family: 'Exo';
+                    }
+
+                    .red2 {
+                        font-weight: 600;
+                        font-size: 16px;
+                        color: #ef476f;
+                        font-family: 'Exo';
+                    }
+                }
+
+                .right {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 50px;
+
+                    .right1 {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 5px;
+
+                        .kml {
+                            font-weight: 700;
+                            font-family: 'Exo';
+                            font-size: 14px;
+                            color: #455362;
+                            text-decoration: none solid rgb(69, 83, 98);
+                        }
+
+                        .current {
+                            font-family: 'Exo';
+                            font-size: 12px;
+                            color: #818b95;
+                            font-weight: 500;
+                        }
+
+                        .kmlt {
+                            width: 118px;
+                            height: 40px;
+                            border: 1px solid #ff9e1b;
+                            font-family: 'Exo';
+                            font-size: 12px;
+                            color: #d17600;
+                            text-align: center;
+                            font-weight: 700;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
+
+                        .date {
+                            font-family: 'Exo';
+                            font-size: 12px;
+                            color: #455362;
+                            font-weight: 600;
+                        }
+                    }
+
+                    .right2 {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 5px;
+                        margin-top: 23px;
+
+                        .gray {
+                            font-family: 'Exo';
+                            font-size: 12px;
+                            color: #818b95;
+                            font-weight: 500;
+                        }
+
+                        .blue {
+                            width: 117px;
+                            height: 40px;
+                            border: 1px solid #455362;
+                            font-family: 'Exo';
+                            font-size: 12px;
+                            color: #455362;
+                            text-align: center;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            font-weight: 700;
+                        }
+
+                        .date {
+                            width: 122px;
+                            height: 21px;
+                            font-family: 'Exo';
+                            font-size: 12px;
+                            color: #455362;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+
+            .card3 {
+                width: 677px;
+                height: max-content;
+                border-radius: 25px;
+                background: #ffffff;
+                box-shadow: 0px 1px 8px rgba(2, 5, 74, 0.33);
+                padding: 20px 25px;
+
+                .container {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 20px;
+
+                    .txtGray {
+                        width: 291px;
+                        font-family: 'Exo';
+                        font-size: 12px;
+                        color: #818b95;
+                        font-weight: 600;
+                    }
+                }
+
+                .txtRequest {
+                    font-family: 'Exo';
+                    font-size: 16px;
+                    color: #455362;
+                    font-weight: 700;
+                }
+
+                .inputs {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 30px;
+                    margin-top: 27px;
+
+                    .mileage {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 7px;
+
+                        p {
+                            font-family: 'Exo';
+                            font-size: 12px;
+                            color: #818b95;
+                            font-weight: 500;
+                            margin-left: 15px;
+                        }
+
+                        .number {
+                            width: 111px;
+                            height: 25px;
+                            padding: 0px 15px 0px 14px;
+                            border: 1px solid #d5dfe8;
+                            border-radius: 10px;
+                            background-color: #edf7ff;
+                            font-family: 'Exo';
+                            font-size: 12px;
+                            color: #818b95;
+                            display: flex;
+                            align-items: center;
+                        }
+                    }
+
+                    .liters {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 7px;
+
+                        p {
+                            font-family: 'Exo';
+                            font-size: 12px;
+                            color: #818b95;
+                            font-weight: 500;
+                            margin-left: 15px;
+                        }
+
+                        .number {
+                            width: 96px;
+                            height: 25px;
+                            padding: 0px 15px 0px 14px;
+                            border: 1px solid #d5dfe8;
+                            border-radius: 10px;
+                            background-color: #edf7ff;
+                            font-family: 'Exo';
+                            font-size: 12px;
+                            color: #818b95;
+                            display: flex;
+                            align-items: center;
+                        }
+                    }
+
+                    .amount {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 7px;
+
+                        p {
+                            font-family: 'Exo';
+                            font-size: 12px;
+                            color: #818b95;
+                            font-weight: 500;
+                            margin-left: 15px;
+                        }
+
+                        .number {
+                            width: 209px;
+                            height: 25px;
+                            padding: 0px 15px 0px 14px;
+                            border: 1px solid #d5dfe8;
+                            border-radius: 10px;
+                            background-color: #edf7ff;
+                            font-family: 'Exo';
+                            font-size: 12px;
+                            color: #818b95;
+                            display: flex;
+                            align-items: center;
+                        }
+                    }
+                }
+
+                .photos {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 30px;
+                    margin-top: 35px;
+
+                    .contPhoto {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+
+                        .title {
+                            font-family: 'Exo';
+                            font-size: 12px;
+                            color: #818b95;
+                            font-weight: 500;
+                            margin-left: 14px;
+                        }
+
+                        .photo {
+                            width: 187px;
+                            height: 123px;
+                            border-radius: 15px;
+                            background-color: #edf7ff;
+                            border: 1px dotted #818b95;
+                            cursor: pointer;
+
+                            &:hover {
+                                .white {
+                                    width: 187px;
+                                    height: 123px;
+                                    border-radius: 15px;
+                                    background-color: rgba(237, 247, 255, 0.34);
+                                    position: absolute;
+                                }
+                            }
+
+                            img {
+                                width: 100%;
+                                height: 100%;
+                                border-radius: 15px;
+                            }
+                        }
+
+                        .ubication {
+                            display: flex;
+                            flex-direction: row;
+                            gap: 5px;
+                            margin-left: 4px;
+                            align-items: center;
+
+                            img {
+                                width: 9px;
+                                height: 9px;
+                            }
+
+                            .text {
+                                font-family: 'Exo';
+                                font-size: 9px;
+                                color: #818b95;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
